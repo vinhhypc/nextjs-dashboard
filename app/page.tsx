@@ -29,6 +29,12 @@ export default function Page() {
           >
             Login
           </Link>
+          <Link
+            href="/dashboard"
+            className="flex items-center gap-5 self-start rounded-lg bg-blue-500 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-blue-400 md:text-base"
+          >
+            DashBoard
+          </Link>
         </div>
         <div className="flex items-center justify-center p-6 md:w-3/5 md:px-28 md:py-12">
           <Image
@@ -37,6 +43,7 @@ export default function Page() {
             height={760}
             className="hidden md:block"
             alt="Screenshots of the dashboard project showing desktop version"
+            priority
           />
           <Image
             src="/hero-mobile.png"
@@ -44,6 +51,7 @@ export default function Page() {
             width={560}
             height={620}
             className="block md:hidden"
+            priority
           />
         </div>
       </div>
